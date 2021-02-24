@@ -1,13 +1,12 @@
 name: Build and deploy
-on:
-  push:
-    branches:
-      - master
+# Run on all pushes
+on: [push]
 jobs: 
   # Deploy to GitHub pages
   deploy:
     runs-on: ubuntu-18.04
     steps:
+      - uses: actions/checkout@v2
       # Clean and don't fail
       - name: clean
         run: rm -rf public
@@ -21,3 +20,13 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: public # The folder the action should deploy.
+      
+      # Intentionally keep surge below GH action stuff so if surge breaks (or token expires) it won't fail the deployment
+      - uses: afc163/surge-preview@v1
+        id: preview_step
+        with:
+          surge_token: ${{ secrets.SURGE_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          dist: public
+      - name: Get the preview_url
+        run: echo "url => ${{ steps.preview_step.outputs.preview_url }}"
