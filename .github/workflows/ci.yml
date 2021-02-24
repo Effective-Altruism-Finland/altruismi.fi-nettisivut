@@ -1,0 +1,23 @@
+name: Build and deploy
+on:
+  push:
+    branches:
+      - master
+jobs: 
+  # Deploy to GitHub pages
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      # Clean and don't fail
+      - name: clean
+        run: rm -rf public
+      # Build the website
+      - name: run hugo
+        run: |
+          ./exec/hugo
+          cp CNAME public/
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: public # The folder the action should deploy.
