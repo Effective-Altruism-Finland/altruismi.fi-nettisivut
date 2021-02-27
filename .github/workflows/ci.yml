@@ -15,13 +15,13 @@ jobs:
         run: |
           ./exec/hugo
           cp CNAME public/
-      - name: Deploy 🚀
+      - if: github.ref == 'refs/heads/master'
+        name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: public # The folder the action should deploy.
       
-      # Intentionally keep surge below GH action stuff so if surge breaks (or token expires) it won't fail the deployment
       - uses: afc163/surge-preview@v1
         id: preview_step
         with:
