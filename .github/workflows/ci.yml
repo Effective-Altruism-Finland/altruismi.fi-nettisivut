@@ -27,6 +27,7 @@ jobs:
         with:
           surge_token: ${{ secrets.SURGE_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          build: echo "built already =)"
           dist: public
           teardown: 'true'
       - name: Get the preview_url
