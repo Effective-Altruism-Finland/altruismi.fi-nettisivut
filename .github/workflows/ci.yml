@@ -1,0 +1,34 @@
+name: Build and deploy
+# Run on all pushes
+on: [push]
+jobs: 
+  # Deploy to GitHub pages
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      # Clean and don't fail
+      - name: clean
+        run: rm -rf public
+      # Build the website
+      - name: run hugo
+        run: |
+          ./exec/hugo
+          cp CNAME public/
+      - if: github.ref == 'refs/heads/master'
+        name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: public # The folder the action should deploy.
+      
+      - uses: afc163/surge-preview@v1
+        id: preview_step
+        with:
+          surge_token: ${{ secrets.SURGE_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          build: echo "built already =)"
+          dist: public
+          teardown: 'true'
+      - name: Get the preview_url
+        run: echo "url => ${{ steps.preview_step.outputs.preview_url }}"
