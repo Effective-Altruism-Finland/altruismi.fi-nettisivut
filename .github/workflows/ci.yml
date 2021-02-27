@@ -2,7 +2,7 @@ name: Build and deploy
 # Run on all pushes
 on: [push]
 jobs: 
-  # Deploy to GitHub pages
+  # Deploy to GitHub pages and surge.sh
   deploy:
     runs-on: ubuntu-18.04
     steps:
@@ -16,13 +16,14 @@ jobs:
           ./exec/hugo
           cp CNAME public/
       - if: github.ref == 'refs/heads/master'
-        name: Deploy 🚀
+        name: Deploy to production gh-pages 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: public # The folder the action should deploy.
       
-      - uses: afc163/surge-preview@v1
+      - name: Deploy to surge.sh
+        uses: afc163/surge-preview@v1
         id: preview_step
         with:
           surge_token: ${{ secrets.SURGE_TOKEN }}
