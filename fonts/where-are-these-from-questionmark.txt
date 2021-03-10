@@ -1,0 +1,3 @@
+https://google-webfonts-helper.herokuapp.com/fonts/poppins?subsets=latin
+https://google-webfonts-helper.herokuapp.com/fonts/alice?subsets=latin
+https://google-webfonts-helper.herokuapp.com/fonts/catamaran?subsets=latin
