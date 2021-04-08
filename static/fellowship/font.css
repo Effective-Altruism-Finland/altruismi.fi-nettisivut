@@ -1,0 +1,28 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.block-title {
+    line-height: 1.5;
+}
+
+.block-subtitle {
+    font-weight: 400;
+    line-height: 1;
+    font-size: 1.2rem;
+}
+
+.block-detail {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #8892A0;
+}
+
+.block-detail p {
+    color: #8892A0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
