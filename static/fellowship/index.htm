@@ -25,8 +25,33 @@
 			}
 		}
 
-		window.onload = function() { readings_toggle(0); };
+		window.onload = function() {
+			readings_toggle(0);	// hide all but the first readings section
+
+			var acc = document.getElementsByClassName("card-header");
+			for (i = 0; i < acc.length; i++) 
+			{
+			  	acc[i].addEventListener("click", function() {
+				    //this.classList.toggle("active");
+
+				    /* Toggle between hiding and showing the active panel */
+				    var panel = this.nextElementSibling;
+				    panel.classList.toggle("show");
+				    if (panel.style.maxHeight)
+			      		panel.style.maxHeight = null;
+				  	else
+			      		panel.style.maxHeight = panel.scrollHeight + "px";
+			  	});
+			};
+		}
 	</script>
+	<style>
+		.collapse {
+			max-height: 0;
+  			overflow: hidden;
+  			transition: max-height 0.2s ease-out;
+		}
+	</style>
 </head>
 	<body>
 		<div id="root">
@@ -182,7 +207,7 @@
 						</div>
 					</section>
 
-					<!--<section class="fdb-block">
+					<section class="fdb-block">
 						<div class="container faq">
 							<div class="row text-center pb-xl-5">
 								<div class="col-12">
@@ -232,151 +257,159 @@
 																	<br>&nbsp;
 																	</p>
 																</div>
-															</div>
-														</div>
-														<div class="faq-item card">
-															<div class="card-header">
-																<i class="fa fa-chevron-down mr-2 font-14" aria-hidden="true"></i>The application process
-															</div>
-															<div class="collapse">
-																<div class="card-body">
-																	<p>
-																		<span style="background-color: rgb(255, 255, 255); color: rgb(32, 33, 36);">Round 1: Fill out the application form. We will let you know, whether you will proceed to Round 2.</span>
-																	</p>
-																	<p>&nbsp;</p>
-																	<p>
-																		<span style="background-color: rgb(255, 255, 255); color: rgb(32, 33, 36);">Round 2: Complete a short reading, and attend an interview with a member of our leadership team in which you will discuss your thoughts on the assigned reading.</span>
-																	</p>
-																	<p>&nbsp;</p>
-																	<p>
-																		<span style="background-color: rgb(255, 255, 255); color: rgb(32, 33, 36);">The interviews will take place on Feb 25-28. We will let you know by March 3 whether you have been accepted to the Fellowship program.&nbsp;</span>
-																		<br>
-																			<span style="background-color: rgb(255, 255, 255); color: rgb(32, 33, 36);">Accepted fellows will meet for the first time </span>
-																			<span style="color: rgb(0, 0, 0);">during the week starting March 12</span>
-																			<span style="background-color: rgb(255, 255, 255); color: rgb(32, 33, 36);">.</span>
-																		</p>
-																		<p>
-																			<br>
-																				<br>
-																					<span style="background-color: rgb(255, 255, 255); color: rgb(32, 33, 36);">Don</span>
-																					<span style="color: rgb(0, 0, 0);">’</span>
-																					<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">t</span>
-																					<span style="background-color: rgb(255, 255, 255); color: rgb(32, 33, 36);"> forget to apply on time! We look forward to reading your application!</span>
-																				</p>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="faq-item card">
-																		<div class="card-header">
-																			<i class="fa fa-chevron-down mr-2 font-14" aria-hidden="true"></i>What is Effective Altruism?
-																		</div>
-																		<div class="collapse">
-																			<div class="card-body">
-																				<p>
-																					<span style="color: rgb(0, 0, 0);">Effective altruism is about finding out</span>
-																					<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"> how we can use our resources to help others the&nbsp;most.</span>
-																				</p>
-																				<p>&nbsp;</p>
-																				<p>
-																					<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">Effective Altruism Helsinki is a welcoming local community dedicated to inspiring and supporting one another to achieve altruistic goals. We organize monthly meetups, as well as occasional workshops and discussion groups.&nbsp;</span>
-																				</p>
-																				<p>&nbsp;</p>
-																				<p>
-																					<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">Visit </span>
-																					<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">https://www.effectivealtruism.org/</span>
-																					<span style="color: rgb(0, 0, 0);"></span>
-																					<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">to learn more.&nbsp;</span>
-																				</p>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="faq-item card">
-																		<div class="card-header">
-																			<i class="fa fa-chevron-down mr-2 font-14" aria-hidden="true"></i>What does the fellowship consist of?
-																		</div>
-																		<div class="collapse">
-																			<div class="card-body">
-																				<p>
-																					<span style="color: rgb(0, 0, 0);">Every week you will have reading to do and a 90 min discussion session. Outside of that, we will organise (virtual) social events where you can get to know other people. We also encourage you to have 1-1 with a facilitator where you can discuss any questions that you might have.&nbsp;</span>
-																				</p>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="faq-item card">
-																		<div class="card-header">
-																			<i class="fa fa-chevron-down mr-2 font-14" aria-hidden="true"></i>How good English skills do I need?
-																		</div>
-																		<div class="collapse">
-																			<div class="card-body">
-																				<p>
-																					<span style="color: rgb(0, 0, 0);">All the readings are in English, so it’s good if you are used to reading in English. However, you don’t need to be a native English speaker, neither are we. Most of our facilitators are students who also speak Finnish, so there is the possibility to run Finnish (or even Swedish) discussion groups too. Anyway, we encourage you to have an open mindset. This could also be a good opportunity to improve your English skills, as you learn and talk with others about interesting topics!</span>
-																				</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</section>-->
-												<section id="ccb8698d-7513-4e96-a589-708405604576" class="fdb-block pt-0 m-0">
-													<div class="row mt-5 justify-content-center">
-														<div class="col-12 col-md-8 text-center">
-															<h2 class="block-title">Timeline</h2>
-															<h4 class="block-subtitle"></h4>
-														</div>
-													</div>
-													<div class="row mt-5 justify-content-center">
-														<div class="col-12 col-md-8 text-center block-detail">
-															<p>
-																<span style="color: rgb(0, 0, 0);">The application period ends: 21 Feb 2021</span>
-															</p>
-															<p>
-																<span style="color: rgb(0, 0, 0);">
-																	<strong>Extended application period until 24 Feb</strong>
-																</span>
-															</p>
-															<p>
-																<span style="color: rgb(0, 0, 0);">Interviews: 25-28 Feb</span>
-															</p>
-															<p>
-																<span style="color: rgb(0, 0, 0);">The fellowship starts on 12 March and lasts 8 weeks.&nbsp;</span>
-																<br>(The weekly meetups for each discussion group will be decided later)
-																</p>
-															</div>
-														</div>
-													</section>
-													<section id="42934afd-beee-467b-9253-198f1f822404" class="fdb-block pt-0 m-0">
-														<div class="row mt-5 justify-content-center">
-															<div class="col-12 col-md-8 text-center">
-																<h2 class="block-title">Contact us</h2>
-																<h4 class="block-subtitle"></h4>
-															</div>
-														</div>
-														<div class="row mt-5 justify-content-center">
-															<div class="col-12 col-md-8 text-center block-detail">
-																<p>
-																	<span style="color: rgb(0, 0, 0);">If you have any questions, please do not hesitate to reach out to</span>&nbsp;
-																	<a href="mailto:helsinki@altruismi.fi">helsinki@altruismi.fi</a>
-																</p>
-																<p>
-																	<span style="color: rgb(230, 77, 77);">
-																		<strong>Link to the application form on the top of the page&nbsp;↑</strong>
-																	</span>
-																</p>
-															</div>
-														</div>
-													</section>
 												</div>
-												<!-- <script>!function(e){function t(t){for(var n,u,a=t[0],i=t[1],p=t[2],c=0,s=[];c
-													<a.length;c++)u=a[c],Object.prototype.hasOwnProperty.call(o,u)&&o[u]&&s.push(o[u][0]),o[u]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(f&&f(t);s.length;)s.shift()();return l.push.apply(l,p||[]),r()}function r(){for(var e,t=0;t
-														<l.length;t++){for(var r=l[t],n=!0,a=1;a
-															<r.length;a++){var i=r[a];0!==o[i]&&(n=!1)}n&&(l.splice(t--,1),e=u(u.s=r[0]))}return e}var n={},o={1:0},l=[];function u(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,u),r.l=!0,r.exports}u.m=e,u.c=n,u.d=function(e,t,r){u.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},u.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},u.t=function(e,t){if(1&t&&(e=u(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(u.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)u.d(r,n,function(t){return e[t]}.bind(null,n));return r},u.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return u.d(t,"a",t),t},u.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},u.p="./";var a=this["webpackJsonpstill-art-template"]=this["webpackJsonpstill-art-template"]||[],i=a.push.bind(a);a.push=t,a=a.slice();for(var p=0;p
-																<a.length;p++)t(a[p]);var f=i;r()}([])
-																</script>
-																<script src="./static/js/2.cdb6729c.chunk.js"></script>
-																<script src="./static/js/main.e4a7c06b.chunk.js"></script>
-																-->
+											</div>
+
+											<div class="faq-item card">
+												<div class="card-header">
+													<i class="fa fa-chevron-down mr-2 font-14" aria-hidden="true"></i>The application process
+												</div>
+												<div class="collapse">
+													<div class="card-body">
+														<p>
+															<span style="background-color: rgb(255, 255, 255); color: rgb(32, 33, 36);">Round 1: Fill out the application form. We will let you know, whether you will proceed to Round 2.</span>
+														</p>
+														<p>&nbsp;</p>
+														<p>
+															<span style="background-color: rgb(255, 255, 255); color: rgb(32, 33, 36);">Round 2: Complete a short reading, and attend an interview with a member of our leadership team in which you will discuss your thoughts on the assigned reading.</span>
+														</p>
+														<p>&nbsp;</p>
+														<p>
+															<span style="background-color: rgb(255, 255, 255); color: rgb(32, 33, 36);">The interviews will take place on Feb 25-28. We will let you know by March 3 whether you have been accepted to the Fellowship program.&nbsp;</span>
+															<br>
+																<span style="background-color: rgb(255, 255, 255); color: rgb(32, 33, 36);">Accepted fellows will meet for the first time </span>
+																<span style="color: rgb(0, 0, 0);">during the week starting March 12</span>
+																<span style="background-color: rgb(255, 255, 255); color: rgb(32, 33, 36);">.</span>
+															</p>
+															<p>
+															<br>
+															<br>
+																<span style="background-color: rgb(255, 255, 255); color: rgb(32, 33, 36);">Don</span>
+																<span style="color: rgb(0, 0, 0);">’</span>
+																<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">t</span>
+																<span style="background-color: rgb(255, 255, 255); color: rgb(32, 33, 36);"> forget to apply on time! We look forward to reading your application!</span>
+															</p>
+														</div>
+													</div>
+												</div>
+
+												<div class="faq-item card">
+													<div class="card-header">
+														<i class="fa fa-chevron-down mr-2 font-14" aria-hidden="true"></i>What is Effective Altruism?
+													</div>
+													<div class="collapse">
+														<div class="card-body">
+															<p>
+																<span style="color: rgb(0, 0, 0);">Effective altruism is about finding out</span>
+																<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"> how we can use our resources to help others the&nbsp;most.</span>
+															</p>
+															<p>&nbsp;</p>
+															<p>
+																<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">Effective Altruism Helsinki is a welcoming local community dedicated to inspiring and supporting one another to achieve altruistic goals. We organize monthly meetups, as well as occasional workshops and discussion groups.&nbsp;</span>
+															</p>
+															<p>&nbsp;</p>
+															<p>
+																<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">Visit </span>
+																<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">https://www.effectivealtruism.org/</span>
+																<span style="color: rgb(0, 0, 0);"></span>
+																<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">to learn more.&nbsp;</span>
+															</p>
+														</div>
+													</div>
+												</div>
+
+												<div class="faq-item card">
+													<div class="card-header">
+														<i class="fa fa-chevron-down mr-2 font-14" aria-hidden="true"></i>What does the fellowship consist of?
+													</div>
+													<div class="collapse">
+														<div class="card-body">
+															<p>
+																<span style="color: rgb(0, 0, 0);">Every week you will have reading to do and a 90 min discussion session. Outside of that, we will organise (virtual) social events where you can get to know other people. We also encourage you to have 1-1 with a facilitator where you can discuss any questions that you might have.&nbsp;</span>
+															</p>
+														</div>
+													</div>
+												</div>
+
+												<div class="faq-item card">
+													<div class="card-header">
+														<i class="fa fa-chevron-down mr-2 font-14" aria-hidden="true"></i>How good English skills do I need?
+													</div>
+													<div class="collapse">
+														<div class="card-body">
+															<p>
+																<span style="color: rgb(0, 0, 0);">All the readings are in English, so it’s good if you are used to reading in English. However, you don’t need to be a native English speaker, neither are we. Most of our facilitators are students who also speak Finnish, so there is the possibility to run Finnish (or even Swedish) discussion groups too. Anyway, we encourage you to have an open mindset. This could also be a good opportunity to improve your English skills, as you learn and talk with others about interesting topics!</span>
+															</p>
+														</div>
+													</div>
+												</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section id="ccb8698d-7513-4e96-a589-708405604576" class="fdb-block pt-0 m-0">
+						<div class="row mt-5 justify-content-center">
+							<div class="col-12 col-md-8 text-center">
+								<h2 class="block-title">Timeline</h2>
+								<h4 class="block-subtitle"></h4>
+							</div>
+						</div>
+						<div class="row mt-5 justify-content-center">
+							<div class="col-12 col-md-8 text-center block-detail">
+								<p>
+									<span style="color: rgb(0, 0, 0);">The application period ends: 21 Feb 2021</span>
+								</p>
+								<p>
+									<span style="color: rgb(0, 0, 0);">
+										<strong>Extended application period until 24 Feb</strong>
+									</span>
+								</p>
+								<p>
+									<span style="color: rgb(0, 0, 0);">Interviews: 25-28 Feb</span>
+								</p>
+								<p>
+									<span style="color: rgb(0, 0, 0);">The fellowship starts on 12 March and lasts 8 weeks.&nbsp;</span>
+									<br>(The weekly meetups for each discussion group will be decided later)
+									</p>
+								</div>
+							</div>
+						</section>
+
+						<section id="42934afd-beee-467b-9253-198f1f822404" class="fdb-block pt-0 m-0">
+							<div class="row mt-5 justify-content-center">
+								<div class="col-12 col-md-8 text-center">
+									<h2 class="block-title">Contact us</h2>
+									<h4 class="block-subtitle"></h4>
+								</div>
+							</div>
+							<div class="row mt-5 justify-content-center">
+								<div class="col-12 col-md-8 text-center block-detail">
+									<p>
+										<span style="color: rgb(0, 0, 0);">If you have any questions, please do not hesitate to reach out to</span>&nbsp;
+										<a href="mailto:helsinki@altruismi.fi">helsinki@altruismi.fi</a>
+									</p>
+									<p>
+										<span style="color: rgb(230, 77, 77);">
+											<strong>Link to the application form on the top of the page&nbsp;↑</strong>
+										</span>
+									</p>
+								</div>
+							</div>
+						</section>
+					</div>
+					<!-- <script>!function(e){function t(t){for(var n,u,a=t[0],i=t[1],p=t[2],c=0,s=[];c
+						<a.length;c++)u=a[c],Object.prototype.hasOwnProperty.call(o,u)&&o[u]&&s.push(o[u][0]),o[u]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(f&&f(t);s.length;)s.shift()();return l.push.apply(l,p||[]),r()}function r(){for(var e,t=0;t
+							<l.length;t++){for(var r=l[t],n=!0,a=1;a
+								<r.length;a++){var i=r[a];0!==o[i]&&(n=!1)}n&&(l.splice(t--,1),e=u(u.s=r[0]))}return e}var n={},o={1:0},l=[];function u(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,u),r.l=!0,r.exports}u.m=e,u.c=n,u.d=function(e,t,r){u.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},u.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},u.t=function(e,t){if(1&t&&(e=u(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(u.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)u.d(r,n,function(t){return e[t]}.bind(null,n));return r},u.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return u.d(t,"a",t),t},u.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},u.p="./";var a=this["webpackJsonpstill-art-template"]=this["webpackJsonpstill-art-template"]||[],i=a.push.bind(a);a.push=t,a=a.slice();for(var p=0;p
+									<a.length;p++)t(a[p]);var f=i;r()}([])
+									</script>
+									<script src="./static/js/2.cdb6729c.chunk.js"></script>
+									<script src="./static/js/main.e4a7c06b.chunk.js"></script>
+									-->
 	</body>
 </html> 
 
