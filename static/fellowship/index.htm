@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="font.css">
 	<link rel="stylesheet" href="css.css">
+	
 	<script>
 		var readings_visible_page = 0;
 
@@ -26,15 +27,14 @@
 		}
 
 		window.onload = function() {
-			readings_toggle(0);	// hide all but the first readings section
+			/* hide all but the first readings section */
+			readings_toggle(0);	
 
+			/* add FAQ accordion logic */
 			var acc = document.getElementsByClassName("card-header");
 			for (i = 0; i < acc.length; i++) 
 			{
 			  	acc[i].addEventListener("click", function() {
-				    //this.classList.toggle("active");
-
-				    /* Toggle between hiding and showing the active panel */
 				    var panel = this.nextElementSibling;
 				    panel.classList.toggle("show");
 				    if (panel.style.maxHeight)
@@ -45,6 +45,7 @@
 			};
 		}
 	</script>
+
 	<style>
 		.collapse {
 			max-height: 0;
@@ -52,6 +53,7 @@
   			transition: max-height 0.2s ease-out;
 		}
 	</style>
+
 </head>
 	<body>
 		<div id="root">
