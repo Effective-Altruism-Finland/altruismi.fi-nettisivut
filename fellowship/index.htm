@@ -5,6 +5,28 @@
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="font.css">
 	<link rel="stylesheet" href="css.css">
+	<script>
+		var readings_visible_page = 0;
+
+		function readings_toggle( direction )
+		{
+			var readings = [
+				document.getElementById("readings-1"),
+				document.getElementById("readings-2"),
+				document.getElementById("readings-3"),
+			];
+
+			readings_visible_page += direction;
+			readings_visible_page = Math.max( 0, Math.min(readings_visible_page, readings.length-1) );
+			for (i = 0; i < readings.length; i++)
+			{ 
+				var visible = (i == readings_visible_page);
+				readings[i].style.display = visible ? '' : 'none';
+			}
+		}
+
+		window.onload = function() { readings_toggle(0); };
+	</script>
 </head>
 	<body>
 		<div id="root">
@@ -81,7 +103,7 @@
 							</div>
 						</div>
 					</section>
-					<!--<section id="76ac1613-98f4-4061-ba04-b07d5e3a878d" class="fdb-block">
+					<section id="76ac1613-98f4-4061-ba04-b07d5e3a878d" class="fdb-block">
 						<div class="container">
 							<div class="row align-items-center text-center">
 								<div class="col">
@@ -91,17 +113,17 @@
 							</div>
 							<div class="d-flex justify-content-between mt-3">
 								<div>
-									<button class="btn btn-default btn-circle" style="background-color: rgb(251, 101, 102);">
+									<button class="btn btn-default btn-circle" style="background-color: rgb(251, 101, 102);" onclick="readings_toggle(-1)">
 										<i class="carousel-control-prev-icon"></i>
 									</button>
 								</div>
 								<div>
-									<button class="btn btn-default btn-circle" style="background-color: rgb(251, 101, 102);">
+									<button class="btn btn-default btn-circle" style="background-color: rgb(251, 101, 102);"  onclick="readings_toggle(1)">
 										<i class="carousel-control-next-icon"></i>
 									</button>
 								</div>
 							</div>
-							<div class="row mt-3 justify-content-center">
+							<div class="row mt-3 justify-content-center" id="readings-1">
 								<div class="col-12 col-sm-10 col-md-8 col-lg-4 mb-3 text-left">
 									<div class="rounded">
 										<div class="p-1 text-center" style="background-color: rgb(31, 83, 105); color: rgb(255, 255, 255);">
@@ -113,9 +135,9 @@
 												<strong></strong>
 											</p>
 											<p class="">This week we’ll investigate what opportunities to do good we have available to us, come to terms with the tradeoffs we face in our altruistic efforts and explore tools that can help us find unusually high impact opportunities.</p>
-											<p class="text-center pt-3">
+											<!--<p class="text-center pt-3">
 												<button class="btn" style="background-color: rgb(31, 83, 105); color: rgb(255, 255, 255);">Core Readings</button>
-											</p>
+											</p>-->
 										</div>
 									</div>
 								</div>
@@ -130,9 +152,9 @@
 												<strong></strong>
 											</p>
 											<p class="">We focus on giving you tools to quantify and evaluate how much good an intervention can achieve; introduce expected value reasoning; and investigate differences in expected cost-effectiveness between interventions.</p>
-											<p class="text-center pt-3">
+											<!--<p class="text-center pt-3">
 												<button class="btn" style="background-color: rgb(0, 131, 155); color: rgb(255, 255, 255);">Core Readings</button>
-											</p>
+											</p>-->
 										</div>
 									</div>
 								</div>
@@ -147,15 +169,19 @@
 												<strong></strong>
 											</p>
 											<p class="">This week focuses on your own values and the practical implications that these views have. During Week 3 we explore who our moral consideration should expand to, with a particular focus on farmed animals as a case example.</p>
-											<p class="text-center pt-3">
+											<!--<p class="text-center pt-3">
 												<button class="btn" style="background-color: rgb(251, 101, 102); color: rgb(255, 255, 255);">Core Readings</button>
-											</p>
+											</p>-->
 										</div>
 									</div>
 								</div>
 							</div>
+							<div class="row mt-3 justify-content-center" id="readings-2"><div class="col-12 col-sm-10 col-md-8 col-lg-4 mb-3 text-left"><div class="rounded"><div class="p-1 text-center" style="background-color: rgb(46, 46, 47); color: rgb(255, 255, 255);"><h2 class="font-weight-light serie-title">Longtermism</h2><h4 class="font-weight-light serie-subtitle pl-1 pr-1">Week 4</h4></div><div class="bg-gray p-3"><p class="h4"><strong> </strong></p><p class="">This week we’ll explore a different approach to finding high-impact interventions - ‘longtermism’ - which attempts to find interventions that beneficially influence the long-run course of humanity. </p><!--<p class="text-center pt-3"><button class="btn" style="background-color: rgb(46, 46, 47); color: rgb(255, 255, 255);">Core Readings</button></p>--></div></div></div><div class="col-12 col-sm-10 col-md-8 col-lg-4 mb-3 text-left"><div class="rounded"><div class="p-1 text-center" style="background-color: rgb(31, 83, 105); color: rgb(255, 255, 255);"><h2 class="font-weight-light serie-title">Existential Risk</h2><h4 class="font-weight-light serie-subtitle pl-1 pr-1">Week 5</h4></div><div class="bg-gray p-3"><p class="h4"><strong> </strong></p><p class="">This week we’ll cover the definition of an existential risk; examine why existential risks might be a moral priority; and explore why existential risks are so neglected by society.</p><!--<p class="text-center pt-3"><button class="btn" style="background-color: rgb(31, 83, 105); color: rgb(255, 255, 255);">Core Readings</button></p>--></div></div></div><div class="col-12 col-sm-10 col-md-8 col-lg-4 mb-3 text-left"><div class="rounded"><div class="p-1 text-center" style="background-color: rgb(0, 131, 155); color: rgb(255, 255, 255);"><h2 class="font-weight-light serie-title">Emerging Technologies</h2><h4 class="font-weight-light serie-subtitle pl-1 pr-1">Week 6</h4></div><div class="bg-gray p-3"><p class="h4"><strong> </strong></p><p class="">During this week, we’ll explore a few technological trends which might have relevance for existential risk. We aim to cover two key emerging technologies that might be less well known - transformative artificial intelligence and advances in biotechnology.</p><!--<p class="text-center pt-3"><button class="btn" style="background-color: rgb(0, 131, 155); color: rgb(255, 255, 255);">Core Readings</button></p>--></div></div></div></div>
+
+							<div class="row mt-3 justify-content-center" id="readings-3"><div class="col-12 col-sm-10 col-md-8 col-lg-4 mb-3 text-left"><div class="rounded"><div class="p-1 text-center" style="background-color: rgb(251, 101, 102); color: rgb(255, 255, 255);"><h2 class="font-weight-light serie-title"> Increasing the Accuracy of our Judgements</h2><h4 class="font-weight-light serie-subtitle pl-1 pr-1">Week 7</h4></div><div class="bg-gray p-3"><p class="h4"><strong> </strong></p><p class="">This week focuses on a range of different tools that we might be able to use to increase our good judgment and ability to forecast well</p><p class="text-center pt-3"><!--<button class="btn" style="background-color: rgb(251, 101, 102); color: rgb(255, 255, 255);">Core Readings</button></p>--></div></div></div><div class="col-12 col-sm-10 col-md-8 col-lg-4 mb-3 text-left"><div class="rounded"><div class="p-1 text-center" style="background-color: rgb(0, 131, 155); color: rgb(255, 255, 255);"><h2 class="font-weight-light serie-title">Putting it into Practice</h2><h4 class="font-weight-light serie-subtitle pl-1 pr-1">Week 8</h4></div><div class="bg-gray p-3"><p class="h4"><strong> </strong></p><p class="">One of the main ways in which we can affect the world for the better is through our careers. This week we help you apply the principles of effective altruism to your own life and also critically reflect back on the rest of the fellowship.</p><!--<p class="text-center pt-3"><button class="btn" style="background-color: rgb(0, 131, 155); color: rgb(255, 255, 255);">Core Readings</button></p>--></div></div></div></div>
 						</div>
-					</section>-->
+					</section>
+
 					<!--<section class="fdb-block">
 						<div class="container faq">
 							<div class="row text-center pb-xl-5">
