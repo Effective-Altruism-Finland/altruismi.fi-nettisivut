@@ -26,23 +26,20 @@
 			}
 		}
 
-		window.onload = function() {
-			/* hide all but the first readings section */
-			readings_toggle(0);	
+		function card_header_onclick(element)
+		{
+			/* expand or contract panel */
+			var panel = element.nextElementSibling;
+		    panel.classList.toggle("show");
+		    if (panel.style.maxHeight)
+	      		panel.style.maxHeight = null;
+		  	else
+	      		panel.style.maxHeight = panel.scrollHeight + "px";
+		}
 
-			/* add FAQ accordion logic */
-			var acc = document.getElementsByClassName("card-header");
-			for (i = 0; i < acc.length; i++) 
-			{
-			  	acc[i].addEventListener("click", function() {
-				    var panel = this.nextElementSibling;
-				    panel.classList.toggle("show");
-				    if (panel.style.maxHeight)
-			      		panel.style.maxHeight = null;
-				  	else
-			      		panel.style.maxHeight = panel.scrollHeight + "px";
-			  	});
-			};
+		window.onload = function() {
+			/* hide all but the first "readings" section */
+			readings_toggle(0);	
 		}
 	</script>
 
@@ -221,7 +218,7 @@
 								<div class="col-12 col-md-8 block-detail">
 									<div class="accordion">
 										<div class="faq-item card">
-											<div class="card-header">
+											<div class="card-header" onclick="card_header_onclick(this)">
 												<i class="fa fa-chevron-down mr-2 font-14" aria-hidden="true"></i>Who is this fellowship for?
 											</div>
 											<div class="collapse">
@@ -263,7 +260,7 @@
 											</div>
 
 											<div class="faq-item card">
-												<div class="card-header">
+												<div class="card-header" onclick="card_header_onclick(this)">
 													<i class="fa fa-chevron-down mr-2 font-14" aria-hidden="true"></i>The application process
 												</div>
 												<div class="collapse">
@@ -296,7 +293,7 @@
 												</div>
 
 												<div class="faq-item card">
-													<div class="card-header">
+													<div class="card-header" onclick="card_header_onclick(this)">
 														<i class="fa fa-chevron-down mr-2 font-14" aria-hidden="true"></i>What is Effective Altruism?
 													</div>
 													<div class="collapse">
@@ -321,7 +318,7 @@
 												</div>
 
 												<div class="faq-item card">
-													<div class="card-header">
+													<div class="card-header" onclick="card_header_onclick(this)">
 														<i class="fa fa-chevron-down mr-2 font-14" aria-hidden="true"></i>What does the fellowship consist of?
 													</div>
 													<div class="collapse">
@@ -334,7 +331,7 @@
 												</div>
 
 												<div class="faq-item card">
-													<div class="card-header">
+													<div class="card-header" onclick="card_header_onclick(this)">
 														<i class="fa fa-chevron-down mr-2 font-14" aria-hidden="true"></i>How good English skills do I need?
 													</div>
 													<div class="collapse">
@@ -395,9 +392,10 @@
 										<a href="mailto:helsinki@altruismi.fi">helsinki@altruismi.fi</a>
 									</p>
 									<p>
-										<span style="color: rgb(230, 77, 77);">
+										<a class="btn btn-default ml-md-3" style="background-color: rgb(200,200,200);" href="https://docs.google.com/forms/d/1dKN6UjxjoinnfU1aW_X4YRAQzjxYBlWvmhI9zbF7IrM">APPLY NOW</a>
+										<!--<span style="color: rgb(230, 77, 77);">
 											<strong>Link to the application form on the top of the page&nbsp;↑</strong>
-										</span>
+										</span>-->
 									</p>
 								</div>
 							</div>
