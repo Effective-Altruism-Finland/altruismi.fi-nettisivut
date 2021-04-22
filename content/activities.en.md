@@ -15,7 +15,7 @@ We will also be running an [**introductory fellowship**](https://eahy-fellowship
 
 If you want to contribute to organizing our activities, or would like help and ideas for implementing your own effective altruism related project, you can join one of our **co-working sessions**, which take place every Wednesday starting 18:00 on our [Discord](https://discord.gg/UwtykUk).
 
-We also have a **career club** of people who meet fortnightly to discuss self-improvement and short and long term career development on a more personal level. If you'd like to join the career club, you can bring it up in your 1-on-1, or send an email to [helsinki@altruismi.f](mailto:helsinki@altruismi.f)!
+We also have a **career club** of people who meet fortnightly to discuss self-improvement and short and long term career development on a more personal level. If you'd like to join the career club, you can bring it up in your 1-on-1, or send an email to [helsinki@altruismi.fi](mailto:helsinki@altruismi.fi)!
 
 We also occasionally organize workshops on topics such as career planning and decision-making skills.
 
