@@ -15,7 +15,7 @@ Järjestämme maaliskusta alkaen myös ["fellowshipin"](https://eahy-fellowship.
 
 Jos haluat osallistua toimintamme järjestämiseen tai kaipaat tukea ja ideoita toteuttaaksesi oman efektiiviseen altruismiin liittyvän projektisi, voit liittyä co-working -tapaamisiimme, joita järjestetään joka keskiviikko klo 18 alkaen [Discordissamme](https://discord.gg/UwtykUk).
 
-Järjestämme myös **uraklubia**, joka kokoontuu kahden viikon välein keskustelemaan henkilökohtaisesta kasvusta ja urakehityksestä efektiivisen altruismin näkökulmasta. Jos olet kiinnostunut liitymään uraklubiimme, mainitse siitä tapaamisessasi aktiivin kanssa, tai laita meiliä!
+Järjestämme myös **uraklubia**, joka kokoontuu kahden viikon välein keskustelemaan henkilökohtaisesta kasvusta ja urakehityksestä efektiivisen altruismin näkökulmasta. Jos olet kiinnostunut liitymään uraklubiimme, mainitse siitä tapaamisessasi aktiivin kanssa, tai laita meiliä osoitteeseen [helsinki@altruismi.f](mailto:helsinki@altruismi.f)!
 
 Järjestämme ajoittain myös työpajoja esimerkiksi urasuunnittelun ja päätöksentekotaitojen kaltaisista aiheista.
 
