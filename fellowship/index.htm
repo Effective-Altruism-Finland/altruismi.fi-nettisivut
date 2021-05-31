@@ -53,22 +53,47 @@
   			transition: max-height 0.2s ease-out;
 		}
 
+		.content-margin {
+			margin-left: 1rem;
+			margin-right: 1rem;
+		}
+
+		.title-main {
+			font-weight: 600;
+		}
+
 		span {
 			color: rgb(0, 0, 0);
 		}
 
+		/* override - slightly more rounded boxes */
 		.rounded {
 			border-radius: .5rem !important;
 			margin-bottom: 1rem;
 		}
 
+		/* override - improved max width on wide displays */
 		.col-md-8-65em {
 			max-width: 65em;
 		}
 
-		.content-margin {
-			margin-left: 1rem;
-			margin-right: 1rem;
+		/* overrides - tighter vertical layout */
+		.fdb-block {
+			padding: 1.5rem 0;
+			margin-top: 0;
+		}
+
+		.accordion {
+			padding-bottom: 1.5rem;
+		}
+
+		.mt-5, .my-5 {
+			padding: 1.5rem 0rem 0rem !important;
+			margin-top: 0rem !important;
+		}
+
+		.pb-xl-5 {
+			padding-bottom: 1rem !important;
 		}
 	</style>
 
@@ -115,7 +140,7 @@
 				<section id="4747050d-98e5-48ba-8d78-bb919c73165c" class="fdb-block pt-0 m-0">
 					<div class="row mt-5 justify-content-center">
 						<div class="col-12 col-md-8-65em text-center">
-							<h2 class="block-title">Effective Altruism Fellowship</h2>
+							<h2 class="block-title title-main">Effective Altruism Fellowship</h2>
 							<h4 class="block-subtitle">Hosted by EA Helsinki, Summer 2021</h4>
 						</div>
 					</div>
