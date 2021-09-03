@@ -1,1 +1,1 @@
-Efektiivinen altruismi on maailmanlaajuinen filosofia ja ja liike, joka soveltaa järkeä ja todisteperäistä tietoa löytääkseen kaikkein tehokkaimmat tavat parantaa maailmaa. 
+Efektiivinen altruismi on maailmanlaajuinen filosofia ja liike, joka soveltaa järkeä ja todisteperäistä tietoa löytääkseen kaikkein tehokkaimmat tavat parantaa maailmaa. 
