@@ -45,12 +45,14 @@ DefaultContentLanguage = "fi"
   readingMaterial = "Reading Material"
   keyTerms = "Key Terms"
   organizations = "Organizations"
+  persons = "Persons"
   # contact= "Contact"
 
   [Languages.en.pages]
   ## -- PAGE HEADERS -- ##
   contactPageHeader = "Contact us"
   aboutEAPageHeader = "What is Effective Altruism?"
+  personsPageHeader = "Who we are"
 
   [Languages.en.homepage]
    ## -- HOMEPAGE -- ##
@@ -116,6 +118,7 @@ DefaultContentLanguage = "fi"
   # effectiveAltruism = "Efektiivinen altruismi"
   aboutEA = "Mitä on efektiivinen altruismi?"
   activities = "Mitä teemme"
+  persons = "Henkilöt"
   # readingMaterial = "Luettavaa"
   # keyTerms = "Keskeisiä käsitteitä"
   # organizations = "Organisaatioita"
@@ -125,6 +128,7 @@ DefaultContentLanguage = "fi"
   ## -- PAGE HEADERS -- ##
   # contactPageHeader = "Ota yhteyttä"
   aboutEAPageHeader = "Mitä on efektiivinen altruismi?"
+  personsPageHeader = "Ketä me olemme"
 
   [Languages.fi.homepage]
    ## -- HOMEPAGE -- ##
