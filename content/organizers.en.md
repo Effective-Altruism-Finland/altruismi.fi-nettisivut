@@ -6,4 +6,4 @@ type: "content-page-with-nice-header"
 ---
 
 
-List of organizers by area. Feel free to contact us at helsinki@altruismi.fi for any questions. (Google translate the finnish page for more but less coherent info)
+List of organizers by area. Feel free to contact us at helsinki@altruismi.fi for any questions. (Google translate the finnish page for actual information. Proper translation coming soon.)
