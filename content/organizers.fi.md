@@ -8,6 +8,8 @@ type: "content-page-with-nice-header"
 
 Tältä sivulta löydät tiedot Effective Altruism Helsingin vastuuhenkilöistä vastuualueittain. Vastaamme mielellään toimintaamme liittyviin kysymyksiin. Löydät vastuuhenkilöt Telegramista nimen tai nimimerkin perusteella. Kaikissa tahansa toimintaamme tai efektiiviseen altruismiin liittyvissä kysymyksissä voit olla myös sähköpostitse yhteydessä meihin (helsinki@altruismi.fi).
 
+Voit ottaa meihin yhteyttä myös [anonyymisti.](https://docs.google.com/forms/d/2MDMZUka-C5wpsIaw2BZ4h4i9K1gaMp4RkYim_xWYkEo/viewform)
+
 
 #### Yhdistys
 
@@ -54,6 +56,6 @@ EAHY:n piirissä toimii myös kahden viikon välein kokoontuva uraklubi, joka ta
 * Tukihenkilöt: Ada-Maaria Hyvärinen, Veikka Karvonen
 * EA-tietopankki: Onni Aarne
 
-Onko jokin toiminnassamme tapahtunut asia tai keskustelujen herättämä ajatus jäänyt vaivaamaan? Oletko kohdannut häirintää tai epäasiallista käytöstä toimintaamme osallistuessasi? Tukihenkilöt ovat sinua varten. Tarjoamme ymmärtäväistä keskusteluseuraa ja tarpeen mukaan puutumme häiritsevään käytökseen puolestasi. Yhteydenotot tukihenkilöihin ovat luottamuksellisia ja voit ottaa meihin yhteyttä myös anonyymisti.
+Onko jokin toiminnassamme tapahtunut asia tai keskustelujen herättämä ajatus jäänyt vaivaamaan? Oletko kohdannut häirintää tai epäasiallista käytöstä toimintaamme osallistuessasi? Tukihenkilöt ovat sinua varten. Tarjoamme ymmärtäväistä keskusteluseuraa ja tarpeen mukaan puutumme häiritsevään käytökseen puolestasi. Yhteydenotot tukihenkilöihin ovat luottamuksellisia ja [voit ottaa meihin yhteyttä myös anonyymisti](https://docs.google.com/forms/d/1MDMZUka-C5wpsIaw2BZ4h4i9K1gaMp4RkYim_xWYkEo/viewform).
 
 Kaipaatko jotakin tiettyä lisätietoa efektiivisestä altruismista, mutta et tiedä, mistä etsiä sitä? Hämmentääkö jokin käsite tai konsepti? Selityksiä ja vinkkejä lisälukemiseen voit kysyä EA-tietopankiltamme.
