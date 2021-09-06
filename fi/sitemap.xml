@@ -18,6 +18,21 @@
   </url>
   
   <url>
+    <loc>https://www.altruismi.fi/organizers/</loc>
+    <lastmod>2021-01-26T20:13:52+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.altruismi.fi/en/organizers/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fi"
+                href="https://www.altruismi.fi/organizers/"
+                />
+  </url>
+  
+  <url>
     <loc>https://www.altruismi.fi/effective-altruism/</loc>
     <lastmod>2020-03-10T20:13:52+02:00</lastmod>
     <xhtml:link
