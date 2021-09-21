@@ -8,7 +8,7 @@ type: "content-page-with-nice-header"
 
 Tältä sivulta löydät tiedot Effective Altruism Helsingin vastuuhenkilöistä vastuualueittain. Vastaamme mielellään toimintaamme liittyviin kysymyksiin. Löydät vastuuhenkilöt Telegramista nimen tai nimimerkin perusteella. Kaikissa tahansa toimintaamme tai efektiiviseen altruismiin liittyvissä kysymyksissä voit olla myös sähköpostitse yhteydessä meihin (helsinki@altruismi.fi).
 
-Voit ottaa meihin yhteyttä myös [anonyymisti.](https://docs.google.com/forms/d/2MDMZUka-C5wpsIaw2BZ4h4i9K1gaMp4RkYim_xWYkEo/viewform)
+Voit ottaa meihin yhteyttä myös [anonyymisti](https://docs.google.com/forms/d/1MDMZUka-C5wpsIaw2BZ4h4i9K1gaMp4RkYim_xWYkEo/viewform).
 
 
 #### Yhdistys
