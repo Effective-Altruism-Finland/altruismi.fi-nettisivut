@@ -24,6 +24,7 @@
                    </ul>
                 </div>
                 {{ end }}
+
                 {{ if ( isset .Site.Params.navbar "Faq" ) }}
                 <li class="nav-item">
                     <a class="nav-link" href="{{ "faq" | absLangURL }}">{{ .Site.Params.navbar.Faq }} </a>
@@ -32,9 +33,15 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{{ "activities" | absLangURL }}">{{ .Site.Params.navbar.Activities }} </a>
               </li>
+              {{ if ( isset .Site.Params.navbar "organizers" ) }}
+              <li class="nav-item">
+                  <a class="nav-link" href="{{ "organizers" | absLangURL }}">{{ .Site.Params.navbar.Organizers }} </a>
+              </li>
+              {{ end }}
                 <li class="nav-item">
                     <a class="nav-link" href="{{ "contact" | absLangURL }}">{{ .Site.Params.navbar.Contact }}</a>
                 </li>
+
                 {{ partial "allLanguages.html" . }}
             </ul>
           </ul>
