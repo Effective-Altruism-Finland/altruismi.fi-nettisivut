@@ -24,15 +24,22 @@
                    </ul>
                 </div>
                 {{ end }}
+                {{ if ( isset .Site.Params.navbar "localgroups" ) }}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ "local-groups" | absLangURL }}">{{ .Site.Params.navbar.localGroups }} </a>
+                </li>
+               {{ end }}
 
                 {{ if ( isset .Site.Params.navbar "Faq" ) }}
                 <li class="nav-item">
                     <a class="nav-link" href="{{ "faq" | absLangURL }}">{{ .Site.Params.navbar.Faq }} </a>
                 </li>
                {{ end }}
+               {{ if ( isset .Site.Params.navbar "activities" ) }}
                 <li class="nav-item">
                   <a class="nav-link" href="{{ "activities" | absLangURL }}">{{ .Site.Params.navbar.Activities }} </a>
               </li>
+               {{ end }}
               {{ if ( isset .Site.Params.navbar "organizers" ) }}
               <li class="nav-item">
                   <a class="nav-link" href="{{ "organizers" | absLangURL }}">{{ .Site.Params.navbar.Organizers }} </a>

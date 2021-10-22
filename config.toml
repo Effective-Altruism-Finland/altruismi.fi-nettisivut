@@ -24,14 +24,22 @@ DefaultContentLanguage = "fi"
 
   [Languages.en.general]
   ## -- GENERAL SITE PARAMETERS -- ##
-  fullTitle = "Effective Altruism Helsinki"
+  fullTitle = "Effective Altruism Finland"
   strapline = "Helping you do good better"
 
   [Languages.en.groupinfo]
   ## -- EA GROUP INFO -- ##
-  legalOrgName = "Effective Altruism Helsinki"
-  orgLocations = "Helsinki"
+  legalOrgName = "Effective Altruism Finland"
+  orgLocations = ["Helsinki", "Aalto University", "Helsinki University"]
   contactEmail = "helsinki@altruismi.fi"
+
+  [Languages.en.localGroups]
+  content="content"
+
+  [Languages.en.helsinki]
+  firstContent="content"
+  [Languages.en.aalto]
+  firstContent="content"
 
   [Languages.en.navbar]
   ## -- NAVIGATION BAR HEADERS -- ##
@@ -39,6 +47,7 @@ DefaultContentLanguage = "fi"
   # but if you do you'll also want to change the relevant .md file under the
   # content folder so the copy corresponds with the header.
   home = "Home"
+  localGroups = "Local Groups"
   effectiveAltruism = "More Resources"
   aboutEA = "Effective Altruism"
   activities = "What we do"
@@ -95,18 +104,18 @@ DefaultContentLanguage = "fi"
 
   [Languages.fi]
   languageCode = "fi"
-  title = "EA Helsinki"
+  title = "EA Suomi"
   weight = 2
 
   [Languages.fi.general]
   ## -- GENERAL SITE PARAMETERS -- ##
-  fullTitle = "Effective Altruism Helsinki"
+  fullTitle = "Effective Altruism Suomi"
   strapline = "Autamme sinua tekemään hyvää paremmin."
 
   [Languages.fi.groupinfo]
   ## -- EA GROUP INFO -- ##
   legalOrgName = "Effective Altruism Helsinki"
-  orgLocations = "Helsinki"
+  orgLocations = ["Helsinki", "Aalto Yliopisto", "Helsingin Yliopisto"]
   contactEmail = "helsinki@altruismi.fi"
 
   [Languages.fi.navbar]
@@ -116,6 +125,7 @@ DefaultContentLanguage = "fi"
   # content folder so the copy corresponds with the header.
   home = "Etusivu"
   # effectiveAltruism = "Efektiivinen altruismi"
+  localGroups = "Paikallisryhmät"
   aboutEA = "Mitä on efektiivinen altruismi?"
   activities = "Mitä teemme"
   organizers = "Vastuuhenkilöt"
@@ -138,6 +148,9 @@ DefaultContentLanguage = "fi"
   secondSectionHeader = "Liity yhteisöömme"
   thirdSectionHeader = "Etsimme parhaita tapoja tehdä hyvää"
   bottomBannerText = ""
+
+  [Languages.fi.localGroups]
+  firstContent="content"
 
   [Languages.fi.contactform]
   ## -- CONTACT FORM -- ##
