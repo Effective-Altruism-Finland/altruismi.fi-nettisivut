@@ -29,13 +29,12 @@ Yleiskoordinaattorin vastuulla on EAHY:n toiminnan pyörittäminen ja yleiskuvan
 * Jäsen- ja aktiiviyhteyshenkilö: Aleksi Maunu
 * Yhteisönrakennusvastaava: Sofia Vanhanen
 * Fellowshipit: Santeri Koivula
-* Monthly meetupit: Veikka Karvonen
 
 EAHY järjestää monenlaista toimintaa keskusteluilloista koulutuksiin. Tällä hetkellä kaikki toimintamme järjestetään etänä Discord-palvelimellamme. Myös Telegram-ryhmässämme käydään aktiivista keskustelua. Olet tervetullut liittymään kumpaankin!
 
 Jännittääkö osallistua tapahtumiin ensimmäistä kertaa? Haluaisitko siirtyä osallistujasta vastuullisempaan rooliin yhdistysaktiiviksi? Ota rohkeasti yhteyttä jäsen- ja aktiiviyhteyshenkilöön.
 
-Järjestämme kuukausittain keskusteluiltoja (monthly meetups). Joka keskusteluillalla on oma efektiiviseen altruismiin liittyvä teemansa: aiemmin olemme puhuneet esimerkiksi henkilökohtaisista arvoista, tehokkaista ilmastohankkeista, tavoitteiden asettamisesta, eläinten oikeuksista ja longtermismistä. Jos haluat ehdottaa aihetta tai järjestää meetupin, ole yhteydessä meetup-vastaavaan.
+Järjestämme kuukausittain keskusteluiltoja (monthly meetups). Joka keskusteluillalla on oma efektiiviseen altruismiin liittyvä teemansa: aiemmin olemme puhuneet esimerkiksi henkilökohtaisista arvoista, tehokkaista ilmastohankkeista, tavoitteiden asettamisesta, eläinten oikeuksista ja longtermismistä. Jos haluat ehdottaa aihetta tai järjestää meetupin, ota aihe puheeksi telegram-kanavalla.
 
 EAHY järjestää säännöllisin väliajoin myös 8-viikkoisen efektiivisen altruismin perusteita käsittelevän fellowshipin. Se on yhdistelmä lukupiiriä ja kurssia, jonka tarkoituksena on tarjota osallistujille mahdollisuus tutustua efektiivisen altruismin keskeisiin teemoihin, keskustella viikottaisista aiheista toisten kiinnostuneiden kanssa ja oppia sitä kautta uusia keinoja tehdä hyvää paremmin. Fellowship-kysymyksissä käänny fellowship-vastaavan puoleen. Tavoitat fellowship-vastaavan Telegramista tai sähköpostilla fellowship@altruismi.fi.
 
