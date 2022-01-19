@@ -25,7 +25,6 @@ List of organizers by area. Feel free to contact us at helsinki@altruismi.fi for
 #### Activities
 
 * Members and active members: Aleksi Maunu
-* Community building: Sofia Vanhanen
 * Fellowships: Santeri Koivula
 
 
@@ -36,5 +35,5 @@ List of organizers by area. Feel free to contact us at helsinki@altruismi.fi for
 
 #### Anything else?
 
-* Support : Ada-Maaria Hyvärinen, Veikka Karvonen
+* Support person: Ada-Maaria Hyvärinen
 * EA librarian: Onni Aarne

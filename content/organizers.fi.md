@@ -27,7 +27,6 @@ Yleiskoordinaattorin vastuulla on EAHY:n toiminnan pyörittäminen ja yleiskuvan
 #### Toiminta
 
 * Jäsen- ja aktiiviyhteyshenkilö: Aleksi Maunu
-* Yhteisönrakennusvastaava: Sofia Vanhanen
 * Fellowshipit: Santeri Koivula
 
 EAHY järjestää monenlaista toimintaa keskusteluilloista koulutuksiin. Tällä hetkellä kaikki toimintamme järjestetään etänä Discord-palvelimellamme. Myös Telegram-ryhmässämme käydään aktiivista keskustelua. Olet tervetullut liittymään kumpaankin!
@@ -52,7 +51,7 @@ EAHY:n piirissä toimii myös kahden viikon välein kokoontuva uraklubi, joka ta
 
 #### Muuta kysyttävää?
 
-* Tukihenkilöt: Ada-Maaria Hyvärinen, Veikka Karvonen
+* Tukihenkilöt: Ada-Maaria Hyvärinen
 * EA-tietopankki: Onni Aarne
 
 Onko jokin toiminnassamme tapahtunut asia tai keskustelujen herättämä ajatus jäänyt vaivaamaan? Oletko kohdannut häirintää tai epäasiallista käytöstä toimintaamme osallistuessasi? Tukihenkilöt ovat sinua varten. Tarjoamme ymmärtäväistä keskusteluseuraa ja tarpeen mukaan puutumme häiritsevään käytökseen puolestasi. Yhteydenotot tukihenkilöihin ovat luottamuksellisia ja [voit ottaa meihin yhteyttä myös anonyymisti](https://docs.google.com/forms/d/1MDMZUka-C5wpsIaw2BZ4h4i9K1gaMp4RkYim_xWYkEo/viewform).
