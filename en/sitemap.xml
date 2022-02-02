@@ -83,6 +83,20 @@
   </url>
   
   <url>
+    <loc>https://www.altruismi.fi/en/_footer-contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fi"
+                href="https://www.altruismi.fi/_footer-contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.altruismi.fi/en/_footer-contact/"
+                />
+  </url>
+  
+  <url>
     <loc>https://www.altruismi.fi/en/_footer-left/</loc>
     <xhtml:link
                 rel="alternate"
@@ -97,16 +111,16 @@
   </url>
   
   <url>
-    <loc>https://www.altruismi.fi/en/_footer-right/</loc>
+    <loc>https://www.altruismi.fi/en/_footer-middle/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fi"
-                href="https://www.altruismi.fi/_footer-right/"
+                href="https://www.altruismi.fi/_footer-middle/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.altruismi.fi/en/_footer-right/"
+                href="https://www.altruismi.fi/en/_footer-middle/"
                 />
   </url>
   
