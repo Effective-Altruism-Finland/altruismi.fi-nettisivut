@@ -10,8 +10,13 @@ List of organizers by area. Feel free to contact us at helsinki@altruismi.fi for
 
  Feel free to use the [anonymous contact form](https://docs.google.com/forms/d/1MDMZUka-C5wpsIaw2BZ4h4i9K1gaMp4RkYim_xWYkEo/viewform) if needed.
 
+#### Effective Altruism Finland Association
+* Chair of the board: Vesa Hautala
+* Treasurer and vice-chair: Kerkko Pelttari
+* Secretary: Tapio Lahtiharju
+* Board members: Ada-Maaria Hyvärinen, Santeri Tani
 
-#### Association
+#### EA Helsinki Association
 
 * Coordinator: Karla Still
 * Treasurer: Silva Perander

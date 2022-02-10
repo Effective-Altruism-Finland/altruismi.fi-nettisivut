@@ -10,8 +10,13 @@ Tältä sivulta löydät tiedot Effective Altruism Helsingin vastuuhenkilöistä
 
 Voit ottaa meihin yhteyttä myös [anonyymisti](https://docs.google.com/forms/d/1MDMZUka-C5wpsIaw2BZ4h4i9K1gaMp4RkYim_xWYkEo/viewform).
 
+#### Effective Altruism Finland Ry
+* Puheenjohtaja: Vesa Hautala
+* Varapuheenjohtaja ja rahastonhoitaja: Kerkko Pelttari
+* Sihteeri: Tapio Lahtiharju
+* Hallituksen muut jäsenet: Ada-Maaria Hyvärinen, Santeri Tani
 
-#### Yhdistys
+#### EA Helsinki - Yhdistys
 
 * Yleiskoordinaattori: Karla Still
 * Rahastonhoitaja: Silva Perander
