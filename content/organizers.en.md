@@ -30,7 +30,7 @@ List of organizers by area. Feel free to contact us at helsinki@altruismi.fi for
 #### Activities
 
 * Members and active members: Aleksi Maunu
-* Fellowships: Santeri Koivula
+* Intro programs: Santeri Tani
 
 
 #### Career advising

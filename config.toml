@@ -82,7 +82,7 @@ DefaultContentLanguage = "fi"
   # secondButtonLink = "https://oaarne.github.io/lean-site-template/contact/"
   # Remove the # before the text to add the optional Meetup button
   # meetupButtonText = "Find us on Meetup"
-  # fellowshipButtonText = "Apply for the Summer 2021 Fellowship"  # uncomment to make button visible
+  # programButtonText = "Apply for the Summer 2021 Fellowship"  # uncomment to make button visible
 
   [Languages.en.urls]
   ## -- EA GROUP FB/TWITTER/MEETUP URLS -- ##
@@ -91,7 +91,7 @@ DefaultContentLanguage = "fi"
   facebookUrl = "https://www.facebook.com/EffectiveAltruismHY/"
   # twitterUrl = ""
   # meetupUrl = ""
-  fellowshipUrl = "https://eahy-fellowship.fi"
+  programUrl = "https://altruismi.fi/program"
 
   [Languages.fi]
   languageCode = "fi"
@@ -158,7 +158,7 @@ DefaultContentLanguage = "fi"
   # secondButtonLink = "https://oaarne.github.io/lean-site-template/contact/"
   # Remove the # before the text to add the optional Meetup button
   # meetupButtonText = "Find us on Meetup"
-  # fellowshipButtonText = "Hae syksyn 2021 Fellowship:iin" # uncomment to make button visible
+  # programButtonText = "Hae syksyn 2021 Fellowship:iin" # uncomment to make button visible
 
   [Languages.fi.urls]
   ## -- EA GROUP FB/TWITTER/MEETUP URLS -- ##
@@ -167,7 +167,7 @@ DefaultContentLanguage = "fi"
   facebookUrl = "https://www.facebook.com/EffectiveAltruismHY/"
   # twitterUrl = ""
   # meetupUrl = ""
-  fellowshipUrl = "https://eahy-fellowship.fi"
+  programUrl = "https://altruismi.fi/program"
 
 [markup]
   [markup.goldmark]

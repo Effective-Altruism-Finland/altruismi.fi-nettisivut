@@ -11,8 +11,8 @@
       {{ if isset .Site.Params.jumbotron "meetupbuttontext" }}
         <a href="{{ .Site.Params.urls.meetupUrl }}" class="btn btn-danger">{{ .Site.Params.jumbotron.meetupButtonText }}</a>
       {{ end }}
-      {{ if isset .Site.Params.jumbotron "fellowshipbuttontext" }}
-        <a href="{{ .Site.BaseURL }}fellowship" class="btn btn-warning" target="_blank" rel="noopener noreferrer">{{ .Site.Params.jumbotron.fellowshipButtonText }}</a>
+      {{ if isset .Site.Params.jumbotron "programbuttontext" }}
+        <a href="{{ .Site.BaseURL }}program" class="btn btn-warning" target="_blank" rel="noopener noreferrer">{{ .Site.Params.jumbotron.programButtonText }}</a>
       {{ end }}
     </p>
   </div>
